@@ -3,7 +3,9 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const app = express();
 
-mongoose.connect("mongodb://localhost:27017/todoapp");
+mongoose.connect(
+  "mongodb://mongo:JovcbvuokCjBJJAGdcmsBFmyRHRWAoHJ@shortline.proxy.rlwy.net:28165"
+);
 
 const Todo = mongoose.model("Todo", { text: String });
 
